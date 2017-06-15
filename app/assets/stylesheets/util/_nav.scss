@@ -1,0 +1,25 @@
+.nav-bar-container{
+	* { box-sizing: border-box; transition: all .2s ease; }
+	form{
+		display: block;
+		position: inherit;
+		float: right;
+		background: none;
+		padding: .5rem;
+	}
+	a { margin-top: .25rem }
+	input[type='submit'], a{
+		background: no-repeat;
+		border: 1px solid #777;
+		border-radius: .25rem;
+		box-shadow: none;
+		padding: .5rem;
+
+		&:hover{
+		cursor: pointer;
+		background: #555;
+		}
+	}
+
+
+}
