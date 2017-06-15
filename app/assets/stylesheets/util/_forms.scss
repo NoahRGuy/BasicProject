@@ -1,0 +1,68 @@
+$pink: #F92D6E;
+$dark-grey: #222222;
+$placeholder-text: #595959;
+$copy-text: #ffffff;
+$lt-grey: #787878;
+
+::-webkit-input-placeholder {
+	color: $placeholder-text;
+}
+::-moz-placeholder{
+	color: $placeholder-text;
+}
+::-ms-input-placeholder{
+	color: $placeholder-text;
+}
+::-moz-placeholder{
+	color: $placeholder-text;
+}
+
+.center-block{
+	display: block;
+	position: relative;
+	float: none;
+	margin: 0 auto;
+}
+
+.form-container{
+	margin-top: 1.5rem;
+	padding: 1rem;
+	background: #333;
+	border-radius: 1rem;
+	.form-title-container{
+
+	}
+}
+
+form.coder-form{
+	input:not([type='submit']) {
+		//background: none;
+		color: white;
+		border-bottom: 2px solid $pink * .6;
+		&:focus{
+		border-bottom: 2px solid $pink;
+		}
+	}
+
+	.actions{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.submit-btn{
+		background: none;
+		border: none;
+		padding: .5rem 1rem;
+		font-size: 1.25 rem;
+		border: 1px solid $pink * .6;
+		color: $lt-grey;
+		border-radius: 5px;
+		margin-bottom: .5rem;
+		&:hover{
+			color: white;
+			border: 2px solid $pink;
+		}
+	}
+}
