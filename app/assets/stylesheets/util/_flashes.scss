@@ -1,0 +1,36 @@
+@keyframes slide-down{
+	0% { transform: translate(-50%, -200%); }
+	66% { transform: translate(-50%, 15%); }
+	100% { transform: translate(-50%, 0%); }
+}
+
+.flash-notice { }
+.flash-error{ }
+.flash-alert{ }
+.alert-box{
+	position: absolute;
+	top: .20rem;
+	left: 0;
+	text-align: center;
+	padding: .5rem 3rem;
+	border-radius: 0;
+	font-weight: 300;
+	font-size: .8rem;
+	letter-spacing: 1px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	border: 0;
+	animation: slide-down .5s ease;
+	animation-fill-mode: forwards;
+	a{
+		color: $light-gray;
+		position: fixed;
+		top: 2px;
+		right: 3px;
+		font-size: 1rem;
+		font-weight: 100;
+	}
+	&.success { background: #43A047; }
+
+	&.alert { background: #B71C1C; }
+}
