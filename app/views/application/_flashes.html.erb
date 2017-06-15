@@ -1,0 +1,16 @@
+<% if notice %>
+	<div class="alert-box success" data-closable>
+		<%= notice %>
+		<a class="close" href="#" data-close>&times;</a>
+	</div>
+<% elsif alert %>
+	<div class="alert-box alert text-white" data-closable>
+		<%= alert.kind_of?(Array) ? alert.join(", \n") : alert %>
+		<a class="close" href="#" data-close>&times;</a>
+	</div>
+<% elsif flash[:error] %>
+	<div class="alert-box alert text-white" data-closable>
+		<%= flash[:error].join(", \n") %>
+		<a class="close" href="#" data-close>&times;</a>
+	</div>
+<% end %>

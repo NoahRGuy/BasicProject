@@ -1,0 +1,12 @@
+<nav class="small-12 columns nav-bar-container">
+	<div class="small-12 large-6 columns brand-container">
+		<h3 class="text-left">Basic Project</h3>
+	</div>
+	<div class="small-12 large-6 columns hide-for-small action-btn-container">
+		<% if !!current_user %>
+			<%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'right' %>
+		<% else %>
+			<%= link_to 'Sign In', new_user_session_path, class: 'right' %>
+		<% end %>
+	</div>
+</nav>
